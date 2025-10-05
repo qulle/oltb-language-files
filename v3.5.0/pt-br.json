@@ -1,0 +1,896 @@
+{
+	"meta": {
+		"text": "Brazilian Portuguese",
+		"value": "pt-br",
+		"info": "This is the loaded pt-br.json file"
+	},
+	"commons": {
+		"titles": {
+			"edit": "Editar",
+			"delete": "Excluir",
+			"dragToSort": "Arrastar para Ordenar",
+			"download": "Baixar",
+			"copyText": "Copiar Texto",
+			"copyCoordinates": "Copiar Coordenadas",
+			"showLayer": "Mostrar Camada",
+			"rename": "Renomear",
+			"toggleSection": "Alternar Seção",
+			"toggleVisibility": "Alternar Visibilidade",
+			"zoomToCoordinates": "Zoom para Coordenadas"
+		},
+		"types": {
+			"convertable": {
+				"drawing": "Desenho",
+				"measurement": "Medição"
+			}
+		}
+	},
+	"managers": {
+		"settingsManager": {
+			"settings": {
+				"mouseWheelZoom": "Dar zoom no mapa somente com roda do mouse",
+				"altShiftDragRotate": "Rotacionar mapa com Shift + Alt + arrasto",
+				"dragPan": "Arrastar mapa usando somente o mouse",
+				"keyboardZoom": "Dar zoom no mapa usando teclado",
+				"keyboardPan": "Mover mapa usando teclado",
+				"selectVectorMapShapes": "Selecionar formas nas camadas vetoriais",
+				"snapInteraction": "Usar interação de encaixe (snap)",
+				"snapHelpLines": "Usar linhas de ajuda de encaixe",
+				"alwaysNewLayers": "Criar nova camada ao selecionar uma ferramenta"
+			}
+		},
+		"errorManager": {
+			"toasts": {
+				"errors": {
+					"uncaughtException": {
+						"title": "Erro",
+						"message": "Ocorreu um erro inesperado"
+					}
+				}
+			}
+		},
+		"infoWindowManager": {
+			"toasts": {
+				"infos": {
+					"copyMarkerCoordinates": {
+						"title": "Copiado",
+						"message": "Coordenadas do marcador copiadas para a área de transferência"
+					},
+					"copyMarkerInfo": {
+						"title": "Copiado",
+						"message": "Informações do marcador copiadas para a área de transferência"
+					}
+				},
+				"errors": {
+					"copyMarkerInfo": {
+						"title": "Erro",
+						"message": "Falha ao copiar informações do marcador"
+					},
+					"copyMarkerCoordinates": {
+						"title": "Erro",
+						"message": "Falha ao copiar coordenadas do marcador"
+					}
+				}
+			},
+			"dialogs": {
+				"confirms": {
+					"deleteMarker": {
+						"title": "Excluir Marcador",
+						"message": "Você deseja excluir este marcador?",
+						"confirmText": "Excluir",
+						"cancelText": "Cancelar"
+					}
+				}
+			}
+		}
+	},
+	"modalExtensions": {
+		"coordinateModal": {
+			"title": "Coordenadas",
+			"form": {
+				"latitude": "Latitude",
+				"longitude": "Longitude",
+				"navigateTo": "Navegar Para",
+				"cancel": "Cancelar",
+				"description": "Coordenadas são informadas em WGS84/EPSG:4326"
+			}
+		},
+		"debugInfoModal": {
+			"title": "Informações de Depuração",
+			"noMapFound": "Nenhuma referência de mapa encontrada",
+			"form": {
+				"doAction": "Executar Ação",
+				"defaultItem": {
+					"title": "Selecionar Ação"
+				},
+				"miscGroup": {
+					"title": "Diversos",
+					"items": {
+						"logToBrowser": "Registrar mapa no console do navegador",
+						"generateUUID": "Gerar UUID",
+						"clearStyleManager": "Limpar Gerenciador de Estilo"
+					}
+				},
+				"eventLogGroup": {
+					"title": "Registro de Eventos",
+					"items": {
+						"copyEventLog": "Copiar Registro de eventos",
+						"clearEventLog": "Limpar Registro de eventos"
+					}
+				}
+			},
+			"sections": {
+				"appData": "Dados do App",
+				"mapData": "Dados do Mapa",
+				"browserData": "Dados do navegador",
+				"localStorage": "Armazenamento local",
+				"sessionStorage": "Armazenamento de sessão",
+				"cookies": "Cookies",
+				"eventLog": "Registro de eventos"
+			},
+			"toasts": {
+				"infos": {
+					"logMapObject": {
+						"title": "Registrado",
+						"message": "Objeto mapa registrado no console"
+					},
+					"copyEventLog": {
+						"title": "Copiado",
+						"message": "Registro de eventos copiado para a área de transferência"
+					},
+					"clearEventLog": {
+						"title": "Limpado",
+						"message": "Registro de eventos teve todas as entradas limpas"
+					},
+					"clearStyleManager": {
+						"title": "Limpado",
+						"message": "Gerenciador de Estilo teve todas as entradas limpas"
+					}
+				},
+				"errors": {
+					"copyEventLog": {
+						"title": "Erro",
+						"message": "Falha ao copiar registro de eventos para a área de transferência"
+					}
+				}
+			}
+		},
+		"downloadLayerModal": {
+			"title": "Baixar Camada",
+			"form": {
+				"layerFormat": "Formato da camada",
+				"download": "Baixar camada",
+				"cancel": "Cancelar"
+			}
+		},
+		"geometryDataModal": {
+			"title": "Dados de Geometria",
+			"data": {
+				"id": "Id",
+				"measurement": "Medição",
+				"oltbProperties": "Propriedades OLTB",
+				"vertices": "Vértices",
+				"coordinates": "Coordenadas"
+			}
+		},
+		"iconMarkerModal": {
+			"title": "Configuração do Marcador",
+			"form": {
+				"title": "Título",
+				"description": "Descrição",
+				"latitude": "Latitude",
+				"longitude": "Longitude",
+				"markerFill": "Preenchimento do marcador",
+				"markerStroke": "Contorno do marcador",
+				"icon": "Ícone",
+				"iconFill": "Preenchimento do ícone",
+				"iconStroke": "Contorno do ícone",
+				"label": "Rótulo",
+				"labelFill": "Preenchimento do rótulo",
+				"labelStroke": "Contorno do rótulo",
+				"labelStrokeWidth": "Largura do contorno do rótulo",
+				"saveChanges": "Salvar alterações",
+				"createMarker": "Criar marcador",
+				"cancel": "Cancelar"
+			}
+		},
+		"importLayerModal": {
+			"title": "Importar Camada",
+			"form": {
+				"featureProjection": "Projeção da feição",
+				"dataProjection": "Projeção dos dados",
+				"import": "Importar camada",
+				"cancel": "Cancelar"
+			}
+		},
+		"layerModal": {
+			"title": "Criar Camada de Mapa",
+			"form": {
+				"name": "Nome",
+				"layer": "Camada",
+				"source": "Fonte",
+				"projection": "Projeção",
+				"url": "URL",
+				"parameters": "Parâmetros (JSON)",
+				"wrapX": "WrapX",
+				"cors": "CORS",
+				"attributions": "Atribuições",
+				"createLayer": "Criar camada",
+				"cancel": "Cancelar"
+			}
+		},
+		"settingsModal": {
+			"title": "Configurações",
+			"form": {
+				"save": "Salvar configurações",
+				"cancel": "Cancelar"
+			}
+		}
+	},
+	"tools": {
+		"hiddenAboutTool": {
+			"contextItems": {
+				"about": "Sobre OLTB"
+			},
+			"modals": {
+				"about": {
+					"title": "Sobre OLTB",
+					"version": "Versão",
+					"developedBy": "Desenvolvido por Qulle",
+					"usingOpenLayers": "Usando OpenLayers"
+				}
+			}
+		},
+		"hiddenMapNavigationTool": {
+			"contextItems": {
+				"copyCoordinates": "Copiar Coordenadas",
+				"navigateToCoordinates": "Navegar Para",
+				"centerMap": "Centralizar Aqui",
+				"focusMap": "Focar Aqui"
+			},
+			"toasts": {
+				"infos": {
+					"coordinatesCopied": {
+						"title": "Copiado",
+						"message": "Coordenadas copiadas para a área de transferência"
+					}
+				},
+				"errors": {
+					"coordinatesCopy": {
+						"title": "Erro",
+						"message": "Falha ao copiar coordenadas"
+					},
+					"parseUrlMarker": {
+						"title": "Erro",
+						"message": "Falha ao analisar marcador da URL"
+					},
+					"missingProjection": {
+						"title": "Erro",
+						"message": "Definição de projeção ausente"
+					}
+				}
+			}
+		},
+		"hiddenMarkerTool": {
+			"contextItems": {
+				"createMarker": "Criar Marcador"
+			}
+		},
+		"bookmarkTool": {
+			"title": "Favoritos",
+			"toolbox": {
+				"titles": {
+					"bookmarks": "Favoritos"
+				},
+				"groups": {
+					"addBookmark": {
+						"placeholder": "Nome",
+						"add": "Adicionar Favorito"
+					}
+				}
+			},
+			"contextItems": {
+				"addBookmark": "Adicionar Favorito",
+				"clearBookmarks": "Limpar Favoritos"
+			},
+			"layers": {
+				"bookmarks": "Favoritos"
+			},
+			"toasts": {
+				"infos": {
+					"clearBookmarks": {
+						"title": "Limpo",
+						"message": "Todos os favoritos armazenados foram limpos"
+					},
+					"createBookmark": {
+						"title": "Novo Favorito",
+						"message": "Um novo favorito foi criado"
+					},
+					"copyCoordinates": {
+						"title": "Copiado",
+						"message": "Coordenadas copiadas para a área de transferência"
+					}
+				},
+				"errors": {
+					"copyCoordinates": {
+						"title": "Erro",
+						"message": "Falha ao copiar coordenadas"
+					}
+				}
+			},
+			"dialogs": {
+				"confirms": {
+					"clearBookmarks": {
+						"title": "Limpar Favoritos",
+						"message": "Você quer limpar todos os favoritos?",
+						"confirmText": "Limpar",
+						"cancelText": "Cancelar"
+					},
+					"deleteBookmark": {
+						"title": "Excluir Favorito",
+						"message": "Você deseja excluir o favorito",
+						"confirmText": "Excluir",
+						"cancelText": "Cancelar"
+					}
+				},
+				"prompts": {
+					"editBookmark": {
+						"title": "Editar Nome",
+						"message": "Você está editando o favorito",
+						"confirmText": "Renomear",
+						"cancelText": "Cancelar"
+					}
+				}
+			}
+		},
+		"coordinatesTool": {
+			"title": "Mostrar Coordenadas",
+			"toolbox": {
+				"titles": {
+					"coordinates": "Coordenadas"
+				},
+				"groups": {
+					"formats": {
+						"title": "Formato",
+						"dd": "Graus Decimais",
+						"dms": "Graus, Minutos, Segundos"
+					},
+					"coordinates": {
+						"title": "Coordenadas"
+					}
+				}
+			},
+			"settings": {
+				"copyOnClick": "Copiar coordenadas ao clicar",
+				"updateToolboxOnHover": "Atualizar caixa de ferramentas ao pairar"
+			},
+			"toasts": {
+				"infos": {
+					"copyCoordinates": {
+						"title": "Copiado",
+						"message": "Coordenadas copiadas para a área de transferência"
+					}
+				},
+				"errors": {
+					"copyCoordinates": {
+						"title": "Erro",
+						"message": "Falha ao copiar coordenadas"
+					}
+				}
+			}
+		},
+		"debugInfoTool": {
+			"title": "Informações de Depuração"
+		},
+		"directionTool": {
+			"title": "Alternar Direção"
+		},
+		"drawTool": {
+			"title": "Desenhar",
+			"toolbox": {
+				"titles": {
+					"draw": "Desenhar"
+				},
+				"groups": {
+					"shapes": {
+						"title": "Forma",
+						"circle": "Círculo",
+						"square": "Quadrado",
+						"rectangle": "Retângulo",
+						"lineString": "Linha",
+						"point": "Ponto",
+						"polygon": "Polígono"
+					},
+					"intersectable": {
+						"title": "Interseção",
+						"true": "Sim",
+						"false": "Não"
+					},
+					"strokeWidth": {
+						"title": "Largura do traço"
+					},
+					"strokeColor": {
+						"title": "Cor do traço"
+					},
+					"fillColor": {
+						"title": "Cor de preenchimento"
+					}
+				}
+			},
+			"layers": {
+				"defaultName": "Camada de desenho"
+			},
+			"toasts": {
+				"infos": {
+					"drawInHiddenLayer": {
+						"title": "Dica",
+						"message": "Você está desenhando em uma camada oculta"
+					},
+					"missingIntersections": {
+						"title": "Ops",
+						"message": "Nenhum objeto intersectante encontrado"
+					}
+				}
+			}
+		},
+		"editTool": {
+			"title": "Editar",
+			"toolbox": {
+				"titles": {
+					"edit": "Editar"
+				},
+				"groups": {
+					"misc": {
+						"title": "Diversos",
+						"delete": "Excluir",
+						"rotate": "Rotacionar",
+						"geometryData": "Dados de geometria",
+						"convertFeature": "Converter"
+					},
+					"copying": {
+						"title": "Área de transferência",
+						"cut": "Recortar",
+						"copy": "Copiar",
+						"paste": "Colar"
+					},
+					"shapes": {
+						"title": "Formas",
+						"union": "União",
+						"intersect": "Interseção",
+						"exclude": "Excluir",
+						"difference": "Diferença"
+					},
+					"strokeColor": {
+						"title": "Cor do traço"
+					},
+					"fillColor": {
+						"title": "Cor de preenchimento"
+					}
+				}
+			},
+			"settings": {
+				"mouseOnlyToEditVectorShapes": "Somente mouse para editar formas vetoriais"
+			},
+			"toasts": {
+				"infos": {
+					"copiedFeatures": {
+						"title": "Copiado",
+						"message": "Objetos foram copiados"
+					},
+					"pastedFeatures": {
+						"title": "Colado",
+						"message": "Objetos foram colados"
+					},
+					"cutFeatures": {
+						"title": "Recortado",
+						"message": "Objetos foram recortados"
+					},
+					"missingFeatures": {
+						"title": "Ops",
+						"message": "Nenhum objeto está selecionado"
+					},
+					"strictOneFeature": {
+						"title": "Ops",
+						"message": "Exatamente um objeto pode ser selecionado"
+					},
+					"strictTwoFeatures": {
+						"title": "Ops",
+						"message": "Duas sobreposições devem ser selecionadas"
+					}
+				},
+				"errors": {
+					"operationFailed": {
+						"title": "Erro",
+						"message": "Falha ao executar operação de forma"
+					},
+					"invalidValue": {
+						"title": "Erro",
+						"message": "Apenas dígitos são permitidos como entrada"
+					}
+				}
+			},
+			"dialogs": {
+				"confirms": {
+					"deleteFeatures": {
+						"title": "Excluir",
+						"message": "Excluir objetos selecionados",
+						"confirmText": "Excluir",
+						"cancelText": "Cancelar"
+					}
+				},
+				"prompts": {
+					"rotateFeatures": {
+						"title": "Rotacionar",
+						"message": "Rotacionar objetos por N graus",
+						"confirmText": "Rotacionar",
+						"cancelText": "Cancelar"
+					},
+					"convertFeatures": {
+						"title": "Converter",
+						"message": "Converter objetos selecionados para",
+						"confirmText": "Converter",
+						"cancelText": "Cancelar"
+					}
+				}
+			}
+		},
+		"exportPngTool": {
+			"title": "Exportar PNG",
+			"toasts": {
+				"errors": {
+					"renderCanvas": {
+						"title": "Erro",
+						"message": "Falha ao exportar o Canvas"
+					}
+				}
+			}
+		},
+		"fullscreenTool": {
+			"title": "Alternar Tela Cheia",
+			"toasts": {
+				"errors": {
+					"missingFullScreenSupport": {
+						"title": "Erro",
+						"message": "Fullscreen não é suportado por este navegador"
+					}
+				}
+			}
+		},
+		"graticuleTool": {
+			"title": "Mostrar Grade"
+		},
+		"helpTool": {
+			"title": "Ajuda",
+			"dialogs": {
+				"confirms": {
+					"openHelp": {
+						"title": "Páginas de ajuda",
+						"message": "Os navegadores bloqueiam abertura automática de novas janelas, aqui está um botão para você clicar",
+						"confirmText": "Abrir Ajuda",
+						"cancelText": "Cancelar"
+					}
+				}
+			},
+			"toasts": {
+				"errors": {
+					"blockedByBrowser": {
+						"title": "Erro",
+						"message": "Ação foi restringida pelas configurações do navegador"
+					}
+				}
+			}
+		},
+		"homeTool": {
+			"title": "Zoom Inicial",
+			"contextItems": {
+				"setHome": "Definir Inicial"
+			},
+			"toasts": {
+				"infos": {
+					"setHomeLocation": {
+						"title": "Nova Inicial",
+						"message": "Nova localização definida como inicial"
+					}
+				}
+			}
+		},
+		"importVectorLayerTool": {
+			"title": "Importar Camada Vetorial",
+			"toasts": {
+				"errors": {
+					"unsupportedFormat": {
+						"title": "Erro",
+						"message": "O formato da camada não é suportado"
+					},
+					"importFailed": {
+						"title": "Erro",
+						"message": "Falha ao importar camada vetorial"
+					}
+				}
+			}
+		},
+		"infoTool": {
+			"title": "Informações"
+		},
+		"layerTool": {
+			"title": "Camadas",
+			"toolbox": {
+				"titles": {
+					"mapLayers": "Camadas do Mapa",
+					"featureLayers": "Camadas de Feição"
+				},
+				"groups": {
+					"createMapLayer": {
+						"placeholder": "Nome",
+						"create": "Criar Camada de Mapa"
+					},
+					"createFeatureLayer": {
+						"placeholder": "Nome",
+						"create": "Criar Camada de Feição"
+					}
+				}
+			},
+			"contextItems": {
+				"addMapLayer": "Adicionar Camada de Mapa",
+				"addFeatureLayer": "Adicionar Camada de Feição"
+			},
+			"toasts": {
+				"infos": {
+					"addFeatureLayer": {
+						"title": "Nova Camada",
+						"message": "Uma nova camada de feição foi criada"
+					}
+				},
+				"errors": {
+					"addFeatureLayer": {
+						"title": "Erro",
+						"message": "Falha ao criar nova camada"
+					},
+					"missingProjection": {
+						"title": "Erro",
+						"message": "Definição de projeção ausente"
+					},
+					"unsupportedFormat": {
+						"title": "Erro",
+						"message": "O formato da camada não é suportado"
+					}
+				}
+			},
+			"dialogs": {
+				"prompts": {
+					"renameLayer": {
+						"title": "Editar Nome",
+						"message": "Editar nome da camada",
+						"confirmText": "Renomear",
+						"cancelText": "Cancelar"
+					}
+				},
+				"confirms": {
+					"deleteLayer": {
+						"title": "Excluir Camada",
+						"message": "Você deseja excluir a camada",
+						"confirmText": "Excluir",
+						"cancelText": "Cancelar"
+					}
+				}
+			}
+		},
+		"magnifyTool": {
+			"title": "Amplificar",
+			"toasts": {
+				"errors": {
+					"renderCanvas": {
+						"title": "Erro",
+						"message": "Erro inesperado usando a lupa"
+					}
+				}
+			}
+		},
+		"measureTool": {
+			"title": "Medir",
+			"toolbox": {
+				"titles": {
+					"measure": "Medir"
+				},
+				"groups": {
+					"type": {
+						"title": "Tipo",
+						"lineString": "Comprimento",
+						"polygon": "Área"
+					},
+					"strokeColor": {
+						"title": "Cor do traço"
+					},
+					"fillColor": {
+						"title": "Cor de preenchimento"
+					}
+				}
+			},
+			"layers": {
+				"defaultName": "Camada de medições"
+			},
+			"toasts": {
+				"infos": {
+					"drawInHiddenLayer": {
+						"title": "Dica",
+						"message": "Você está medindo em uma camada oculta"
+					}
+				}
+			}
+		},
+		"myLocationTool": {
+			"title": "Minha Localização",
+			"dialogs": {
+				"confirms": {
+					"exitFullscreen": {
+						"title": "Sair da Tela Cheia",
+						"message": "Para usar a geolocalização você deve sair da tela cheia",
+						"confirmText": "Sair da Tela Cheia",
+						"cancelText": "Cancelar"
+					}
+				}
+			},
+			"toasts": {
+				"infos": {
+					"fetchLocation": {
+						"title": "Buscando",
+						"message": "Tentando encontrar sua localização..."
+					}
+				},
+				"errors": {
+					"exitFullscreen": {
+						"title": "Erro",
+						"message": "Falha ao sair da tela cheia"
+					},
+					"locationNotFound": {
+						"title": "Erro",
+						"message": "Falha ao encontrar localização"
+					}
+				}
+			}
+		},
+		"overviewTool": {
+			"title": "Visão Geral do Mapa",
+			"toolbox": {
+				"titles": {
+					"overview": "Visão Geral"
+				}
+			}
+		},
+		"refreshTool": {
+			"title": "Atualizar Página"
+		},
+		"resetNorthTool": {
+			"title": "Redefinir Norte",
+			"contextItems": {
+				"rotate": "Rotacionar Mapa"
+			},
+			"dialogs": {
+				"prompts": {
+					"rotateMap": {
+						"title": "Rotacionar Mapa",
+						"message": "Definir rotação do mapa por graus",
+						"confirmText": "Rotacionar Mapa",
+						"cancelText": "Cancelar"
+					}
+				}
+			},
+			"toasts": {
+				"errors": {
+					"invalidValue": {
+						"title": "Erro",
+						"message": "Apenas dígitos são permitidos como entrada"
+					}
+				}
+			}
+		},
+		"scaleLineTool": {
+			"title": "Linha de escala"
+		},
+		"scissorsTool": {
+			"title": "Tesoura de polígono",
+			"toasts": {
+				"infos": {
+					"missingIntersections": {
+						"title": "Ops",
+						"message": "Nenhum objeto intersectante encontrado"
+					}
+				}
+			}
+		},
+		"settingsTool": {
+			"title": "Configurações",
+			"contextItems": {
+				"clearBrowserState": "Limpar estado do navegador"
+			},
+			"toasts": {
+				"infos": {
+					"clearBrowserState": {
+						"title": "Limpo",
+						"message": "Todos os itens armazenados foram redefinidos para padrão"
+					}
+				},
+				"successes": {
+					"savedSettings": {
+						"title": "Salvo",
+						"message": "Todas as configurações salvas no armazenamento do navegador"
+					}
+				}
+			},
+			"dialogs": {
+				"confirms": {
+					"clearBrowserState": {
+						"title": "Limpar estado do navegador",
+						"message": "Você quer redefinir todos os itens para o estado padrão da barra de ferramentas?",
+						"confirmText": "Limpar",
+						"cancelText": "Cancelar"
+					}
+				}
+			}
+		},
+		"splitViewTool": {
+			"title": "Exibição Dividida",
+			"toolbox": {
+				"titles": {
+					"splitView": "Exibição Dividida"
+				},
+				"groups": {
+					"leftSide": {
+						"title": "Lado Esquerdo"
+					},
+					"rightSide": {
+						"title": "Lado Direito"
+					},
+					"swapSides": {
+						"swap": "Trocar Lados"
+					}
+				},
+				"toasts": {
+					"infos": {
+						"strictOneLayer": {
+							"title": "Dica",
+							"message": "Você deve ter mais de uma camada"
+						}
+					},
+					"errors": {
+						"layerFailedToLoad": {
+							"title": "Erro",
+							"message": "A(s) camada(s) não pôde(ram) ser carregada(s)"
+						}
+					}
+				}
+			}
+		},
+		"themeTool": {
+			"title": "Alternar Tema"
+		},
+		"toolboxTool": {
+			"title": "Alternar Caixa de Ferramentas"
+		},
+		"translationTool": {
+			"title": "Traduzir",
+			"dialogs": {
+				"selects": {
+					"changeLanguage": {
+						"title": "Idioma",
+						"message": "Idioma atual é",
+						"confirmText": "Mudar idioma",
+						"cancelText": "Cancelar"
+					}
+				}
+			}
+		},
+		"zoomboxTool": {
+			"title": "Zoombox",
+			"tooltips": {
+				"dragToZoom": "Arrastar para ampliar"
+			}
+		},
+		"zoomInTool": {
+			"title": "Aproximar"
+		},
+		"zoomOutTool": {
+			"title": "Afastar"
+		}
+	}
+}
